@@ -1,0 +1,123 @@
+* {
+	padding: 0;
+	margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* SIDEBAR */
+#sidebar {
+  position: fixed;
+  width: 20%;
+  height: 100%;
+  background-color: black;
+  left: -20%;
+}
+
+#sidebar li {
+  color: white;
+  font-size: 30px;
+  padding: 30px;
+  border-bottom: 1px solid gray;
+  text-align: center;
+  transition: .5s;
+}
+
+.toggle-btn {
+  position: absolute;
+  left: 105%;
+  top: 15px;
+  cursor: pointer;
+}
+
+.toggle-btn span {
+  display: block;
+  background-color: black;
+  width: 30px;
+  height: 5px;
+  margin: 3px;
+}
+
+#sidebar.active {
+  left: 0;
+  animation-name: sideAnimation;
+  animation-duration: 1s; 
+}
+
+@keyframes sideAnimation {
+  0% {width: 0%}
+  100% {width: 20%}
+}
+
+#sidebar ul li:hover{
+  background-color: #FFF;
+  color: black;
+}
+
+#sidebar ul li a {
+  color: #5588a3;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* END SIDEBAR */
+
+
+/* HOME */
+.img {
+    width: 100%;
+    height: 100vh;
+    background: url(../img/road.jpg) fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text h1 {
+    text-align: center;
+    color: #FFF;
+    font-size: 50px;
+    letter-spacing: 25px;
+    cursor: default;
+}
+
+.text h3 {
+    text-align: center;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 10px;
+    line-height: 100px;
+    cursor: default;
+}
+
+.text button {
+    padding: 7px 40px 7px 40px;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+    background: #000;
+    color: aliceblue;
+    letter-spacing: 5px;
+    position: absolute;
+    left: 36%;
+    transition: 0.5s;
+    border: 3px solid white;
+}
+
+.text button:hover {
+    background-color: #eeeeee;
+    color: black;
+    border: 3px solid black;
+}
+
+.text a {
+  color: #d65a31;
+  text-decoration: none;
+}
+
+/* END HOME */
